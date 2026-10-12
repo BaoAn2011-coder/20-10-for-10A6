@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en" class="dark">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>19-11</title>
+
+    <link href="https://fonts.bunny.net/css?family=instrument-sans:400,500,600" rel="stylesheet"/>
+    <link rel="stylesheet" href="/static/css/app.css" />
+  </head>
+
+  <body class="font-sans antialiased">
+    <div
+      id="app"
+      data-page='{
+        "component": "views/home",
+        "props": {
+          "errors": {},
+          "name": "19-11",
+          "quote": {
+            "message": "",
+            "author": ""
+          },
+          "auth": {
+            "user": null
+          },
+          "ziggy": {
+            "port": null,
+            "defaults": [],
+            "routes": {
+              "home": {
+                "uri": "/",
+                "methods": ["GET", "HEAD"]
+              },
+              "show-create-form": {
+                "uri": "create-message/{id?}",
+                "methods": ["GET", "HEAD"],
+                "parameters": ["id"]
+              },
+              "create-form": {
+                "uri": "create-message",
+                "methods": ["POST"]
+              },
+              "login": {
+                "uri": "login",
+                "methods": ["GET", "HEAD"]
+              },
+              "logout": {
+                "uri": "logout",
+                "methods": ["POST"]
+              },
+              "storage.local": {
+                "uri": "storage/{path}",
+                "methods": ["GET", "HEAD"],
+                "wheres": {
+                  "path": ".*"
+                },
+                "parameters": ["path"]
+              }
+            },
+            "location": ""
+          },
+
+          "message": "",
+
+          "client": {
+            "fontName": "Mali",
+            "color": "#ff0019",
+
+            "messages": [
+              "chúc cô và các bạn 20/10 vui vẻ, hạnh phúc",
+              "Thùy Anh",
+              "Trang Minh",
+              "Ngọc Phương",
+              "Mai Phương",
+              "Thu Phương",
+              "Khánh Linh",
+              "Hải Linh",
+              "Ngọc Linh",
+              "Mai Loan",
+              "Hương",
+              "Ngọc Huyền",
+              "Giang",
+              "Khánh Chi",
+              "Đan Thanh",
+              "Thiên Ngọc",
+              "Anh Đào",
+              "Trà My",
+              "Ngọc Anh"
+            ],
+
+            "music": "E La Khong The Remix.mp3"
+          },
+
+          "clientId": "/"
+        },
+        "url": "/",
+        "version": "",
+        "clearHistory": false,
+        "encryptHistory": false
+      }'
+    ></div>
+
+    <script type="module" src="/static/js/app.js"></script>
+    <script type="module" src="/static/js/home.js"></script>
+    <script src="/static/js/photo-rain.js"></script>
+  </body>
+</html>
