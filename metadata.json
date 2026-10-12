@@ -1,0 +1,8 @@
+{
+  "name": "20-10 for 10A6",
+  "description": "3D interactive celebration and memory showcase for class 10A6 with falling photos, 3D heart particles, and music.",
+  "requestFramePermissions": [],
+  "capabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}
